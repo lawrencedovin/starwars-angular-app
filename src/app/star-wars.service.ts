@@ -17,7 +17,7 @@ export class StarWarsService {
   constructor(private logService: LogService, private http: HttpClient) {}
 
   fetchCharacters () {
-    this.http.get<any>('http://swapi.dev/api/people/')
+    this.http.get<any>('https://swapi.dev/api/people/')
       .subscribe(
         (data) => {
           const {results} = data;
